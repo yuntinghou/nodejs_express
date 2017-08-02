@@ -4,21 +4,24 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build-css": "stylus public/stylesheets/index.styl -o public/css",
-    "watch-css": "stylus public/stylesheets/index.styl -o public/css -w",
+    "build-css": "stylus public/stylesheets/mycss.styl -o public/css",
+    "watch-css": "stylus public/stylesheets/mycss.styl -o public/css -w",
     "clean": "rm -rf public/css && mkdir -p public/css",
     "build": "npm run clean && npm run build-css",
     "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
+    "bootstrap": "^3.3.7",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
     "jade": "~1.11.0",
-    "morgan": "~1.8.1",
+    "jquery": "^3.2.1",
     "mongodb": "^2.2.25",
-    "monk": "^4.0.0",
-    "serve-favicon": "~2.4.2"
+    "monk": "^6.0.3",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2",
+    "stylus": "^0.54.5"
   }
 }
