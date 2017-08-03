@@ -1,6 +1,28 @@
 extend default
 
 block content
+    div(id="myCarousel" class="carousel slide" data-ride="carousel")
+        ol.carousel-indicators
+            li(data-target="#myCarousel" data-slide-to="0" class="active")
+            li(data-target="#myCarousel" data-slide-to="1")
+            li(data-target="#myCarousel" data-slide-to="2")
+        div.carousel-inner(role="listbox")
+            div(class="item active")
+                img(src="images/dolls.jpg" alt="Dolls" width="1280" height="852")
+                div.carousel-caption
+                    h3="Dolls"
+                    p="There are something amazing happened"
+            div(class="item")
+                img(src="images/bay.jpg" alt="bay" width="1280" height="852")
+                div.carousel-caption
+                    h3="La Jolla Bay"
+                    p="It is my favorite place in SD"
+            div(class="item")
+                img(src="images/motors.jpg" alt="motors" width="1280" height="852")
+                div.carousel-caption
+                    h3="Motors"
+                    p="The motors in Julian"
+
     div(class="container text-center")
         h3= "Program monkey"
         p.
