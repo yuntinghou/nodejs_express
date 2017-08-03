@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Stranger' });
 });
 
-router.get('/helloworld', function(req, res) {
-    res.render('helloworld', { title: 'Hello, World!' });
+router.get('/about', function(req, res) {
+    res.render('about', { title: 'Hello' });
 });
 /*
 //Get Userlist page.

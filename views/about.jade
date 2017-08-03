@@ -1,1 +1,34 @@
 extend default
+
+
+block content
+    - var friends = 1
+    case title
+        when "Hello"
+            h1 Oye welcome my friend
+        default
+            h1 Dont know you
+
+    case friends
+        when 0: p you have no friends
+        when 1: p you have a friend
+        default: p you have #{friends} friends
+
+    ul.list-group
+        -for (var x = 0; x < 3; x++)
+            li.list-group-item item
+
+    - var user = { }
+    - var authorised = true
+    #user
+        if user.description
+            h2 Description
+            p.description= user.description
+        else if authorised
+            h2 Description
+            p.description.
+                User has no description
+                why not add one...
+        else
+            h1 Description
+            p.description User has no description

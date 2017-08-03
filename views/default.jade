@@ -20,7 +20,7 @@ html(lang="en")
                         span.icon-bar
                         span.icon-bar
                         span.icon-bar
-                    a(class="navbar-brand" href="#")="Casa de YT"
+                    a(class="navbar-brand" href="/")="Casa de YT"
                 div(class="collapse navbar-collapse" id="myNavbar")
                     ul(class="nav navbar-nav navbar-right")
                         li
@@ -28,7 +28,7 @@ html(lang="en")
                         li
                             a(href="#myPage")="HOBBY"
                         li
-                            a(href="#myPage")="ABOUT"
+                            a(href="/about")="ABOUT"
                         li
                             a(href="#myPage")="CONTACT"
                         li.dropdown
@@ -46,12 +46,6 @@ html(lang="en")
                                 span(class="glyphicon glyphicon-search")
         block content
 
-        footer.text-center
-            a(class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP")
-                span(class="glyphicon glyphicon-chevron-up")
-            br
-            br
-            p="Made by YTH"
-                a(href="http://www.cxhou.com" data-toggle="tooltip" title="I am raspberry")=" www.cxhou.com"
+        include footer
 
 
