@@ -5,15 +5,53 @@ html(lang="en")
         link(rel='stylesheet', href='/css/mycss.css')
         script(src='resource/jquery/dist/jquery.min.js')
         script(src='resource/bootstrap/dist/js/bootstrap.min.js')
+        script(src='javascripts/myscript.js')
         title Casa de cxHou
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, initial-scale=1")
-
         //link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
         //script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
         //script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
     body
-
+        nav(class="navbar navbar-default navbar-fixed-top")
+            div.container-fluid
+                div.navbar-header
+                    button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar")
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a(class="navbar-brand" href="#")="Casa de YT"
+                div(class="collapse navbar-collapse" id="myNavbar")
+                    ul(class="nav navbar-nav navbar-right")
+                        li
+                            a(href="#myPage")="HOME"
+                        li
+                            a(href="#myPage")="HOBBY"
+                        li
+                            a(href="#myPage")="ABOUT"
+                        li
+                            a(href="#myPage")="CONTACT"
+                        li.dropdown
+                            a(class="dropdown-toggle" data-toggle="dropdown" href="#")="MORE"
+                                span.caret
+                            ul.dropdown-menu
+                                li
+                                    a(href="#")="Merchandise"
+                                li
+                                    a(href="#")="Extras"
+                                li
+                                    a(href="#")="Media"
+                        li
+                            a(href="#")
+                                span(class="glyphicon glyphicon-search")
         block content
+
+        footer.text-center
+            a(class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP")
+                span(class="glyphicon glyphicon-chevron-up")
+            br
+            br
+            p="Made by YTH"
+                a(href="http://www.cxhou.com" data-toggle="tooltip" title="I am raspberry")=" www.cxhou.com"
 
 
